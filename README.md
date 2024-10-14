@@ -1,10 +1,6 @@
 # Complex Numbers Calculator
 
----
-
 ## Table of Contents
-
----
 
 - [Overview](#overview)
 - [Features](#features)
@@ -14,8 +10,6 @@
 - [Examples](#examples)
 
 ## Overview
-
----
 
 ### Why Java
 
@@ -68,8 +62,6 @@ Patterns** such as:
 - [**Factory**](https://en.wikipedia.org/wiki/Factory_method_pattern)
 
 ## Features
-
----
 
 The **Complex Numbers Calculator** includes a various range of functionalities to perform arithmetic operations and
 manipulate complex numbers efficiently.
@@ -136,8 +128,6 @@ manipulate complex numbers efficiently.
 
 ## Installation
 
----
-
 ### Prerequisites
   
 Before installing and running the application, ensure that the following prerequisites are met:
@@ -191,9 +181,7 @@ main class that contains the ```main``` method:
 java -cp out Main
 ```
 
-## Usage 
-
---- 
+## Usage
 
 After installing the application, follow the steps below to run and use the **Complex Numbers Calculator**.
 
@@ -565,8 +553,6 @@ Class responsible for **parsing** complex number expressions from `CLI`.
   Creates an `instance` of `ComplexExpression` based on the parsed *complex numbers* and *operators*.
 
 ## Examples
-
----
 
 Based on the application [Usage](#usage), you can run the following arithmetic expressions:
 
