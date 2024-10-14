@@ -1,3 +1,7 @@
+package models;
+
+import enums.Operation;
+
 /**
  * Class representing a complex division expression.
  * <p>
@@ -9,7 +13,7 @@ public class DivisionExpression extends ComplexExpression {
 
     /**
      * Constructor that initializes a division expression with the given complex numbers.
-     * <p>
+     * <p>A
      * The constructor calls the parent constructor {@link ComplexExpression#ComplexExpression(Operation,
      * ComplexNumber[])} to set the operation to {@link Operation#DIVISION} and store the complex numbers as arguments.
      *

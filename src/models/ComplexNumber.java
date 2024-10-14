@@ -1,3 +1,5 @@
+package models;
+
 import org.jetbrains.annotations.NotNull;
 
 /**
@@ -8,7 +10,7 @@ public class ComplexNumber {
     private final int im;  // Imaginary part of the complex number
 
     /**
-     * Constructs a new ComplexNumber with the specified real and imaginary parts.
+     * Constructs a new models.ComplexNumber with the specified real and imaginary parts.
      *
      * @param re the real part
      * @param im the imaginary part
@@ -22,7 +24,7 @@ public class ComplexNumber {
      * Adds this complex number to another complex number.
      *
      * @param other the complex number to add
-     * @return a new ComplexNumber representing the sum
+     * @return a new models.ComplexNumber representing the sum
      */
     public ComplexNumber add(@NotNull ComplexNumber other) {
         return new ComplexNumber(re + other.re, im + other.im);
@@ -32,7 +34,7 @@ public class ComplexNumber {
      * Subtracts another complex number from this complex number.
      *
      * @param other the complex number to subtract
-     * @return a new ComplexNumber representing the difference
+     * @return a new models.ComplexNumber representing the difference
      */
     public ComplexNumber subtract(@NotNull ComplexNumber other) {
         return new ComplexNumber(re - other.re, im - other.im);
@@ -42,7 +44,7 @@ public class ComplexNumber {
      * Multiplies this complex number by another complex number.
      *
      * @param other the complex number to multiply by
-     * @return a new ComplexNumber representing the product
+     * @return a new models.ComplexNumber representing the product
      */
     public ComplexNumber multiply(@NotNull ComplexNumber other) {
         int realPart = re * other.re - im * other.im;
@@ -55,7 +57,7 @@ public class ComplexNumber {
      * Divides this complex number by another complex number.
      *
      * @param other the complex number to divide by
-     * @return a new ComplexNumber representing the quotient
+     * @return a new models.ComplexNumber representing the quotient
      * @throws ArithmeticException if attempting to divide by zero
      */
     public ComplexNumber divide(@NotNull ComplexNumber other) {
@@ -73,7 +75,7 @@ public class ComplexNumber {
     /**
      * Returns the conjugate of this complex number.
      *
-     * @return a new ComplexNumber representing the conjugate
+     * @return a new models.ComplexNumber representing the conjugate
      */
     public ComplexNumber conjugate() {
         return new ComplexNumber(re, -im);
@@ -82,7 +84,7 @@ public class ComplexNumber {
     /**
      * Returns a string representation of the complex number.
      *
-     * @return a string in the form "a + bi" or "a - bi"
+     * @return a string in the form "a + b * i" or "a - b * i"
      */
     @Override
     public String toString() {

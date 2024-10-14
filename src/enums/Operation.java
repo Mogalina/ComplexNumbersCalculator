@@ -1,3 +1,5 @@
+package enums;
+
 /**
  * Enum representing the four basic arithmetic operations that can be performed on complex numbers: addition,
  * subtraction, multiplication, and division.

@@ -1,3 +1,7 @@
+package models;
+
+import enums.Operation;
+
 /**
  * Abstract class representing an arithmetic expression involving complex numbers.
  * <p>

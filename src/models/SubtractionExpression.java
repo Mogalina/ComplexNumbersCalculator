@@ -1,3 +1,7 @@
+package models;
+
+import enums.Operation;
+
 /**
  * Class representing a complex subtraction expression.
  * <p>

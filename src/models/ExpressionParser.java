@@ -1,3 +1,7 @@
+package models;
+
+import org.jetbrains.annotations.NotNull;
+
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -14,7 +18,7 @@ public class ExpressionParser {
      * @return the result of the evaluated complex number expression
      * @throws IllegalArgumentException if the input format is invalid
      */
-    public ComplexNumber parse(String[] args) {
+    public ComplexNumber parse(String @NotNull [] args) {
         // Initialize an array to store the complex numbers / operands
         ComplexNumber[] numbers = new ComplexNumber[args.length / 2 + 1];
 
@@ -55,10 +59,10 @@ public class ExpressionParser {
     }
 
     /**
-     * Parses a complex number from a string and returns a ComplexNumber object.
+     * Parses a complex number from a string and returns a models.ComplexNumber object.
      *
      * @param str the string representing a complex number
-     * @return the parsed ComplexNumber {@link ComplexNumber}
+     * @return the parsed models.ComplexNumber {@link ComplexNumber}
      * @throws IllegalArgumentException if the format is invalid
      */
     private ComplexNumber parseComplexNumber(String str) {
@@ -80,7 +84,7 @@ public class ExpressionParser {
      * @param str the string to check
      * @return true if it is a valid operator, false otherwise
      */
-    private boolean isOperator(String str) {
+    private boolean isOperator(@NotNull String str) {
         return str.equals("+") || str.equals("-") || str.equals("*") || str.equals("/");
     }
 
@@ -89,9 +93,9 @@ public class ExpressionParser {
      *
      * @param numbers   the array of ComplexNumbers {@link ComplexExpression}
      * @param operators the array of operators
-     * @return the ComplexExpression representing the operation to be executed
+     * @return the models.ComplexExpression representing the operation to be executed
      */
-    private ComplexExpression createExpression(ComplexNumber[] numbers, String[] operators) {
+    private ComplexExpression createExpression(ComplexNumber @NotNull [] numbers, String @NotNull [] operators) {
         // Compose expression starting with first complex number / operand
         ComplexExpression expression = new AdditionExpression(new ComplexNumber[]{numbers[0]});
 

@@ -1,3 +1,7 @@
+import models.ComplexNumber;
+import models.ExpressionParser;
+import org.jetbrains.annotations.NotNull;
+
 /**
  * Main class to execute the complex number calculator. This class serves as the entry point for the application.
  */
@@ -8,14 +12,14 @@ public class Main {
      *
      * @param args command line arguments that represent the complex number expression
      */
-    public static void main(String[] args) {
+    public static void main(String @NotNull [] args) {
         // Check if any input arguments are provided
         if (args.length == 0) {
             System.err.println("[ERROR] No input provided");
             return;
         }
 
-        // Create an instance of ExpressionParser to handle the parsing and evaluation
+        // Create an instance of models.ExpressionParser to handle the parsing and evaluation
         ExpressionParser parser = new ExpressionParser();
 
         try {

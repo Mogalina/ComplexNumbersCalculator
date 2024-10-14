@@ -1,3 +1,8 @@
+package models;
+
+import enums.Operation;
+import org.jetbrains.annotations.NotNull;
+
 /**
  * Class representing a complex addition expression.
  * <p>
@@ -31,7 +36,7 @@ public class AdditionExpression extends ComplexExpression {
      * @return the result of adding c1 and c2
      */
     @Override
-    protected ComplexNumber executeOneOperation(ComplexNumber c1, ComplexNumber c2) {
+    protected ComplexNumber executeOneOperation(@NotNull ComplexNumber c1, ComplexNumber c2) {
         return c1.add(c2);
     }
 }
