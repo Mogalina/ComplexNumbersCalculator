@@ -10,7 +10,7 @@ public class ComplexNumber {
     private final int im;  // Imaginary part of the complex number
 
     /**
-     * Constructs a new models.ComplexNumber with the specified real and imaginary parts.
+     * Constructs a new ComplexNumber with the specified real and imaginary parts.
      *
      * @param re the real part
      * @param im the imaginary part
@@ -88,6 +88,6 @@ public class ComplexNumber {
      */
     @Override
     public String toString() {
-        return re + (im >= 0 ? " + " : " - ") + Math.abs(im) + " * i";
+        return re + (im >= 0 ? "+" : "-") + Math.abs(im) + "*i";
     }
 }

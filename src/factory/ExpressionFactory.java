@@ -7,8 +7,8 @@ import org.jetbrains.annotations.NotNull;
 /**
  * Singleton class responsible for creating instances of {@link ComplexExpression} based on the provided operation type.
  * <p>
- * It ensures that only one instance of {@code factory.ExpressionFactory} is created during the application's lifetime and
- * provides a method to generate different types of complex arithmetic expressions based on the input operation.
+ * It ensures that only one instance of {@code ExpressionFactory} is created during the application's lifetime
+ * and provides a method to generate different types of complex arithmetic expressions based on the input operation.
  */
 public class ExpressionFactory {
 
@@ -22,11 +22,11 @@ public class ExpressionFactory {
     private ExpressionFactory() {}
 
     /**
-     * Returns the single instance of the {@code factory.ExpressionFactory} class.
+     * Returns the single instance of the {@code ExpressionFactory} class.
      * <p>
      * This method ensures lazy initialization. The instance is created only when it is first requested.
      *
-     * @return the singleton instance of {@code factory.ExpressionFactory}
+     * @return the singleton instance of {@code ExpressionFactory}
      */
     public static ExpressionFactory getInstance() {
         if (instance == null) {

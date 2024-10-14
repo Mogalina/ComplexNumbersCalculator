@@ -59,7 +59,7 @@ public class ExpressionParser {
     }
 
     /**
-     * Parses a complex number from a string and returns a models.ComplexNumber object.
+     * Parses a complex number from a string and returns a ComplexNumber object.
      *
      * @param str the string representing a complex number
      * @return the parsed models.ComplexNumber {@link ComplexNumber}

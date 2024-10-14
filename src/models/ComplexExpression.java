@@ -18,7 +18,7 @@ public abstract class ComplexExpression {
     protected ComplexNumber[] args;
 
     /**
-     * Constructor to initialize the complex expression with a specific operatios and a list of complex numbers as
+     * Constructor to initialize the complex expression with a specific operation and a list of complex numbers as
      * arguments.
      *
      * @param operation the operation to be performed

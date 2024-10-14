@@ -1,6 +1,7 @@
 package models;
 
 import enums.Operation;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * Class representing a complex division expression.
@@ -36,7 +37,7 @@ public class DivisionExpression extends ComplexExpression {
      * @throws ArithmeticException if c2 is zero (division by zero)
      */
     @Override
-    protected ComplexNumber executeOneOperation(ComplexNumber c1, ComplexNumber c2) {
+    protected ComplexNumber executeOneOperation(@NotNull ComplexNumber c1, ComplexNumber c2) {
         return c1.divide(c2);
     }
 }
