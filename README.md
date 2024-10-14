@@ -232,13 +232,11 @@ java -cp out Main complex_number operator complex_number operator complex_number
 
 ## Code Overview
 
----
-
 - [**Main.java**](#main)
-- [**documentation/**](#documentation)
-- [**enums/**](#enums)
-- [**factory/**](#factory)
-- [**models/**](#models)
+- [**/documentation**](#documentation)
+- [**/enums**](#enums)
+- [**/factory**](#factory)
+- [**/models**](#models)
 
 ### Main.java
 
@@ -252,7 +250,7 @@ orchestrates the calculation operations.
 - Starts the application and manages user interactions.
 - Creates an `ExpressionParser` object to handle the parsing and evaluation of the arithmetic expression.
 
-### documentation/
+### /documentation
 
 This folder stores information about the application and project structure, including the relationship between `classes`
 , `packages` and `modules`.
@@ -263,7 +261,7 @@ This `.png` file represents the
 [**UML (Unified Modeling Language)**](#https://en.wikipedia.org/wiki/Unified_Modeling_Language) diagram that stores
 information about the relationship between `classes`, `packages` and `modules`.
 
-### enums/
+### /enums
 
 This `package` stores `enum` classes to define collections of **constants** that are grouped together under **a single
 type**. The purpose of `enum` classes is to enhance **type safety** and make code more **readable** and 
@@ -282,7 +280,7 @@ public enum Operation {
 
 Defines the **supported operations** on arithmetic expressions.
 
-### factory/
+### /factory
 
 This `package` contains `classes` that follow the 
 [**Factory Method Pattern**](#https://en.wikipedia.org/wiki/Factory_method_pattern#Java). The purpose of this *design
@@ -375,7 +373,7 @@ Therefore, the benefits of using **Singleton Method** here are the following:
 - **Controlled Instantiation** : The **Singleton Pattern** ensures that **only one** `instance` of the factory exists, 
   preventing multiple factories from being created **unnecessarily** and conserving *memory resources*.
 
-### models/
+### /models
 
 This `package` contains `classes` that are the **core domain objects** of the application. These `classes` represent
 abstract concepts specific to the application.
