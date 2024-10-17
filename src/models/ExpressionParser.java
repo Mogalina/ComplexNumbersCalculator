@@ -1,5 +1,7 @@
 package models;
 
+import enums.Operation;
+import factory.ExpressionFactory;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.regex.Matcher;
@@ -104,10 +106,10 @@ public class ExpressionParser {
             ComplexNumber nextNumber = numbers[i + 1];
 
             expression = switch (operator) {
-                case "+" -> new AdditionExpression(new ComplexNumber[]{expression.execute(), nextNumber});
-                case "-" -> new SubtractionExpression(new ComplexNumber[]{expression.execute(), nextNumber});
-                case "*" -> new MultiplicationExpression(new ComplexNumber[]{expression.execute(), nextNumber});
-                case "/" -> new DivisionExpression(new ComplexNumber[]{expression.execute(), nextNumber});
+                case "+" -> ExpressionFactory.getInstance().createExpression(Operation.ADDITION, expression.args);
+                case "-" -> ExpressionFactory.getInstance().createExpression(Operation.SUBTRACTION, expression.args);
+                case "*" -> ExpressionFactory.getInstance().createExpression(Operation.MULTIPLICATION, expression.args);
+                case "/" -> ExpressionFactory.getInstance().createExpression(Operation.DIVISION, expression.args);
                 default -> throw new IllegalArgumentException("Unknown operator: " + operator);
             };
         }
