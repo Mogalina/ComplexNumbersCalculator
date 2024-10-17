@@ -61,6 +61,27 @@ Patterns** such as:
 - [**Singleton**](https://en.wikipedia.org/wiki/Singleton_pattern)
 - [**Factory**](https://en.wikipedia.org/wiki/Factory_method_pattern)
 
+To **find more** about the project, check the `JavaDoc` using the following command based on your operating system
+(**make sure** you are currently located in the *project directory*):
+
+- **macOS**
+
+  ```bash
+  open ./src/resources/index.html
+  ```
+
+- **Linux**
+
+  ```bash
+  xdg-open ./src/resources/index.html
+  ```
+
+- **Windows**
+
+  ```bash
+  start .\src\resources\index.html
+  ```
+
 ## Features
 
 The **Complex Numbers Calculator** includes a various range of functionalities to perform arithmetic operations and
@@ -233,7 +254,7 @@ java -cp out Main complex_number operator complex_number operator complex_number
 ## Code Overview
 
 - [**Main.java**](#main)
-- [**/documentation**](#documentation)
+- [**/resources**](#documentation)
 - [**/enums**](#enums)
 - [**/factory**](#factory)
 - [**/models**](#models)
@@ -250,7 +271,7 @@ orchestrates the calculation operations.
 - Starts the application and manages user interactions.
 - Creates an `ExpressionParser` object to handle the parsing and evaluation of the arithmetic expression.
 
-### /documentation
+### /resources
 
 This folder stores information about the application and project structure, including the relationship between `classes`
 , `packages` and `modules`.
